@@ -1,0 +1,12 @@
+﻿@model IList<manager.web.Controllers.Player>
+
+@{
+    ViewBag.Title = "Players";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@foreach (var player in Model)
+{
+    <p>@player.Name</p>
+}
