@@ -1,5 +1,7 @@
 ﻿using System.Web.Mvc;
 using manager.web.Controllers;
+using manager.web.services;
+using Moq;
 using NUnit.Framework;
 
 namespace manager.web.tests.Controllers
@@ -10,7 +12,7 @@ namespace manager.web.tests.Controllers
         [Test]
         public void Should_List_Players()
         {
-            IPlayerService playerService = new PlayerService();
+            IPlayerService playerService = Mock.Of<IPlayerService>();
             var controller = new PlayerController(playerService);
 
             ViewResult actualResult = controller.List() as ViewResult;

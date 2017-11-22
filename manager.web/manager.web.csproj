@@ -169,7 +169,9 @@
     <Compile Include="App_Start\StructuremapMvc.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\IPlayerService.cs" />
+    <Compile Include="services\PlayerRepository.cs" />
+    <Compile Include="services\IPlayerRepository.cs" />
+    <Compile Include="services\IPlayerService.cs" />
     <Compile Include="Controllers\Player.cs" />
     <Compile Include="Controllers\PlayerController.cs" />
     <Compile Include="Controllers\TeamController.cs" />
@@ -181,7 +183,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="PlayerService.cs" />
+    <Compile Include="services\PlayerService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

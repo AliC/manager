@@ -1,9 +1,9 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using manager.web.Controllers;
 
-namespace manager.web
+namespace manager.web.services
 {
-    public class PlayerService : IPlayerService
+    public class PlayerRepository : IPlayerRepository
     {
         public IList<Player> List()
         {
